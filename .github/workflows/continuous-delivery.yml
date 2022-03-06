@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - name: Add TypeScript problem matcher
@@ -54,7 +54,7 @@ jobs:
     if: "github.event_name == 'push'"
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Use Node.js v16
         uses: actions/setup-node@v2
         with:
